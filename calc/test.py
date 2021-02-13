@@ -41,3 +41,4 @@ class TestCalculator(unittest.TestCase):
         response = self.client.get('/math/div?a=2&b=2')
         self.assertIn(b'1', response.data)
         self.assertEqual(response.status_code, 200)
+
